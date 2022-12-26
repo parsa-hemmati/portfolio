@@ -2,15 +2,18 @@
   box-sizing: border-box;
 }
 
-.hero-banner {
-  background-image: url('/images/photo_2022-07-14_23-16-38.jpg');
-  }
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+}
+
+.hb {
+  background-image: url('../images/02-hero-bg.jpg');
+  width: 10vw;
+  height: 10vh;
+  background-repeat: no-repeat;
 }
 
 h1,
@@ -20,6 +23,18 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.title_column {
+  flex: 25%;
+}
+
+.info_column {
+  flex: 75%;
 }
 
 p {
