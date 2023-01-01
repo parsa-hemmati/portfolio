@@ -17,7 +17,8 @@ body {
 }
 
 nav {
-  background-color: lightgrey;
+  background-color: black;
+  color: white;
 }
 
 nav a { 
@@ -53,4 +54,10 @@ h6 {
 p {
   margin: 0;
 }
-   
+
+.info_column a {
+  color: black;
+}
+  .info_column a:hover {
+    color: red;
+  }
