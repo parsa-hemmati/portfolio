@@ -24,6 +24,11 @@ nav a {
 	padding: 0px 20px; 
  } 
 
+#profile {
+  display: flex;
+  flex-basis: 40%
+}
+
 h1,
 h2,
 h3,
