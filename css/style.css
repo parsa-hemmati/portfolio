@@ -26,8 +26,7 @@ nav a {
  } 
 
 #profile {
-  display: flex;
-  flex-basis: 40%
+  display: inline;
 }
 
 h1,
