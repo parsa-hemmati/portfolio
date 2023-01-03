@@ -9,6 +9,10 @@ body {
   line-height: 1.5;
 }
 
+row {
+  margin-bottom: 400px;
+}
+
 .hb {
   background-image: url('../images/02-hero-bg.jpg');
   width: 100%;
@@ -18,11 +22,11 @@ body {
 
 nav {
   background-color: black;
-  color: white;
 }
 
 nav a { 
-	padding: 0px 20px; 
+	padding: 0px 20px;
+  color: white;
  } 
 
 #profile {

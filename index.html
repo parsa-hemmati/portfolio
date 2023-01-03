@@ -9,14 +9,25 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
+<script>
+  document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    document.querySelector(event.target.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+</script>
+
 <body>
   <!-- main logo / nav -->
   <header>
     <h1>Parsa Hemmati's Portfolio</h1>
     <nav>
-      <a href="">About me</a>
-      <a href="">My works</a>
-      <a href="">Contact me</a>
+      <a href="#about">About me</a>
+      <a href="#work">My works</a>
+      <a href="#contact">Contact me</a>
 
     </nav>
   </header>
@@ -30,7 +41,7 @@
       <div class="row">
         <div class="title_column"><h2>About Me</h2></div>
         <div class="info_column">
-              <img id="profile" src="images/profile-photo.jpg" height="100 vh" width="100 vh"><p>I'm a medical doctor with a few years of experience practising medicine in the UK and Iran. I have worked in inpatient and outpatient settings. I am also very enthusiastic about anything related to computer science, which is why I currently work as an Academic Clinical Fellow in Neuroinformatics. In this role, I explore the applications of machine learning and natural language processing in neurology patient data.
+              <img id="profile" src="images/profile-photo.jpg" style="float:left" height="100 vh" width="100 vh"><p>I'm a medical doctor with a few years of experience practising medicine in the UK and Iran. I have worked in inpatient and outpatient settings. I am also very enthusiastic about anything related to computer science, which is why I currently work as an Academic Clinical Fellow in Neuroinformatics. In this role, I explore the applications of machine learning and natural language processing in neurology patient data.
 
                 In my free time, I might enjoy learning new languages. I am a native Farsi speaker, have working proficiency in the English language, and can speak some German, and a little French, too. I have studied Arabic in school for some years, but unfortunately, I do not feel confident in speaking Arabic but might be able to understand written Arabic.</p>
         </div>
